@@ -1,51 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="shortcut icon" type="png" href="images/icon/logo.png">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
-	<title>Divine Infotech</title>
-	<meta name="desciption" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script>
-		$(window).on('scroll', function(){
-  			if($(window).scrollTop()){
-  			  $('nav').addClass('black');
- 			 }else {
- 		   $('nav').removeClass('black');
- 		 }
-		})
-	</script>
-</head>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Website</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Divine Infotech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="yart.css">
 </head>
+
 <body>
 
-<div class="container">
-    <!-- Navigation Bar -->
-    <header id="header">
-        <nav>
-            <div class="logo">
-                <img src="images/icon/logo.png" alt="logo">
-                <span class="logo-text">Divine Infotech</span>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent mt-2">
+            <div class="container-fluid container-lg" id="round-onclick">
+                <a class="logo d-lg-none d-block text-decoration-none" href="#">
+                    <h1>Divine Infotech</h1>
+                </a>
+                <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list" id="menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                    </ul>
+                    <a class="logo d-lg-block text-decoration-none d-none" href="#">
+                        <h1>Divine Infotech</h1>
+                    </a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enquire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus_section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#portfolio_section">Portfolio</a></li>
-                <li><a href="#course_section">Course</a></li>
-                <li><a href="#services_section">Services</a></li>
-                <li><a href="#contactus_section">Contact</a></li>
-            </ul>
         </nav>
+    </header>
+
+   
+
+
+
 
         <div class="head-container">
             <div class="quote">
@@ -57,7 +69,7 @@
             </div>
         </div>
         
-    </header>
+   
 </div>
 
 <script src="script.js"></script>
@@ -87,7 +99,7 @@
 
 	
 <!-- ABOUT -->
-	<div class="diffSection" id="about_section">
+	<div class="diffSection" id="about">
 		<center><p style="font-size: 50px; padding: 100px">About Divine Infotech</p></center>
 		<div class="about-content">
 				<div class="side-image">
@@ -102,7 +114,7 @@
 
 
 <!-- PORTFOLIO -->
-	<div class="diffSection" id="portfolio_section">
+	<div class="diffSection" id="portfolio">
 		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
 		<div class="content">
 			<p>We're dedicated to making a positive impact by equipping students with valuable skills. Now, we're embracing the online world!
@@ -123,7 +135,7 @@ Equip yourself for the future with Divine Infotech. We offer the tools and knowl
 
 <!-- SERVICES -->
 	<div class="service-swipe">
-		<div class="diffSection" id="services_section">
+		<div class="diffSection" id="service">
 		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
 		</div>
 		<a href="#"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Online Computer Courses</p></div></a>
@@ -137,7 +149,8 @@ Equip yourself for the future with Divine Infotech. We offer the tools and knowl
 	</div>
 
 <!-- Reviews by Students -->
-<section class="testimonials">
+    
+  <section class="testimonials">
   <h2>What Our Students Say</h2>
   <div class="testimonial-container">
     <article class="testimonial">
@@ -172,6 +185,20 @@ Equip yourself for the future with Divine Infotech. We offer the tools and knowl
 
   </div>
 </section>
+
+
+
+
+ 
+
+
+
+    
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <script src="/main.js"></script>
+</section>
+
+
 
 <!-- CONTACT US -->
 	<div class="diffSection" id="contactus_section">
@@ -224,12 +251,37 @@ Equip yourself for the future with Divine Infotech. We offer the tools and knowl
 
 	</footer>
 <div class="credit">Crafted by <a href="https://tinobritty-portfolio.vercel.app/">Britt</a> | All rights reserved</div>
-</body>
 
-<script>
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-});
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        const btn = document.getElementById("menu");
+        const addRadius = document.getElementById("round-onclick");
+        btn.addEventListener("click", function(){
+            addRadius.classList.toggle("radius-50");
+        })
+    </script>
+   
+
+</body>
 
 </html>
