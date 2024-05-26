@@ -41,7 +41,11 @@ nav > div {
 }
 
 
+.h54{
+    font-size: 18px;
+    color: black;
 
+}
 
 
 @keyframes arrow {
@@ -69,10 +73,7 @@ nav > div {
 html {
 	scroll-behavior: smooth;
 }
-body {
-	background: #00000;
-	font-family: 'Open Sans', sans-serif;
-}
+
 
 header {
 	height: 0vh;
